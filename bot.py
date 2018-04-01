@@ -195,6 +195,6 @@ async def setup(ctx):
     await guild.create_text_channel('cool-channel')
     await bot.say("Welcome to setup..")
 
-bot.run('NDI1NjExODYyODY1MDg0NDE3.DZJ9ew.N0VwWMak6T4ecIR9JgzM4FnXymI')
+bot.run('add your own token')
 
 
