@@ -65,7 +65,7 @@ async def font(ctx, message, fontrequest="comicsans", color_text="white", fontsi
 
         else:
             pass
-            image = Image.open(IMG_OPEN_DIR)
+            image = Image.open(IMG_OPEN_DIR + "/fontbot/limit.png")
             font = fontrequest
             path = PATH_DIR + "/fontbot/fonts/"
             from pathlib import Path
