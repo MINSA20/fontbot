@@ -14,7 +14,6 @@ from discord.ext.commands import Bot
 import asyncio
 import PIL
 from PIL import Image, ImageDraw, ImageFont
-import sys
 import os
 
 debug_mode = True
@@ -90,7 +89,7 @@ async def font(ctx, message, fontrequest="comicsans", color_text="white", fontsi
                 await bot.say("{} says:".format(ctx.message.author.mention))
                 path = PATH_DIR + 'fontbot/output/{}.png'.format(filename)
                 await bot.send_file(ctx.message.channel, path)
-                os.remove(path)
+                os.system("rm {}/fontbot/output/{}.png".format(path, filename))
     except OSError as e:
         if debug_mode == True:
             await bot.say(e.strerror)
