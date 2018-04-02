@@ -29,3 +29,5 @@ Usage: ``$font install [web page link to .ttf] FontName``
 FontName can't contain any spaces or symbols. 
 
 **Also, .OTF fonts don't work**
+
+## Just a heads-up, this bot will be worked on once in a while. Don't expect constant updates.
