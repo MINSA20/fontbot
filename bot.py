@@ -189,12 +189,6 @@ async def fonts(ctx):
         await bot.say(file)
 """
 
-@bot.command(pass_context=True)
-async def setup(ctx):
-    guild = ctx.message.guild
-    await guild.create_text_channel('cool-channel')
-    await bot.say("Welcome to setup..")
-
 bot.run('add your own token')
 
 
